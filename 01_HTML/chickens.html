@@ -10,6 +10,16 @@
     img : image 요소
      - src : source 
      - alt : 이미지가 안나올떄 대체할 텍스트 정보 
+    div : 요소들을 묶는 컨테이너 (이미지와 요소를 묶을수도 있음.)\
+    span : 요소에서 일부의 대해 속성을 적용하는 경우 주로 사용함. 
+    hr : 화면에 수평선을 그림 
+    br : 문장의 중간의 내용을 짤라주는 역할
+    sup / sub script : 제곱승이나 지수승등을 할떄 위에 조그만하게 표기하거나, 참조 정보의 대해서 주로 사용.
+    [Entity Code] : HTML ENtity Code 
+     - 개념 : 키보드로 타이핑 하기 어려운 글자들을 특수문자화 하여 만든것
+     - 특징 : & 로 시작하여 ; 로 끝난다.
+     - dev.w3.org/html5/gtml-author/charref
+
 
 -->
 <!DOCTYPE html>
@@ -21,6 +31,12 @@
 
 <body>
     <h1>Chicken</h1>
+    <hr>
+    <h1>1 < 6</h1>
+    <h1>1 &lt; 6</h1>
+    <hr>
+    <h2>Auguries of Inocence</h2>
+    <p>aaaaaaaaaa<br> bbbbbbbbbb<br> cccccccc<br> ddddd</p>
 
     <a href="http://www.google.com">I am Link to Google </a>
     <a href="about.html">About Pageßß</a>
@@ -31,9 +47,13 @@
 
     <p>
     The <b>chicken</b> (Gallus gallus domesticus) is a domesticated subspecies of the red junglefowl originally from
-    Southeastern Asia. Rooster or cock is a term for an adult male bird, and a younger male may be called a cockerel. A
+    Southeastern Asia.<sup><a href="test">[1]</a></sup> Rooster or cock is a term for an adult male bird, and a younger male may be called a cockerel. A
     male that has been castrated is a capon. An adult female bird is called a hen and a sexually immature female is
     called a pullet.
+    </p>
+    <p>
+        I Like H<sub>2</sub>o<br>
+        <sup>1</sup>/<sub>2</sub>   
     </p>
     
 

@@ -1,0 +1,52 @@
+<!--
+    form : 데이터를 입력받아 넘겨주는 것 
+    -action : 넘겨줄 대상
+    
+    [구성요소]
+    input : 받을 데이터 공간을 만드는 역할
+    - placeholder : 대체 입력 자리자
+
+    label : check 버튼을 넣을수도 있다. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <button>Please Do not submit the form</button>
+        <!-- id 와 for 가 동일해야 일심 동체가 된다.-->
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="user_name">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="password">
+        </p>
+        <button>In the middle</button>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input type="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input type="number" placeholder="number">
+        </p>
+        <button>submit</button>
+        <input type="submit" value="Click Me">
+    </form>
+
+
+</body>
+
+</html>

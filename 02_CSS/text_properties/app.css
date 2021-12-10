@@ -1,0 +1,14 @@
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    text-decoration: blue underline wavy;
+    letter-spacing: 10px;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    text-align: right;
+    font-weight: 200;
+}

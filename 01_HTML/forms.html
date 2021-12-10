@@ -8,6 +8,8 @@
 
     label : check 버튼을 넣을수도 있다. 
 
+    require : 클라이언트측 검사 
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -97,6 +99,21 @@
             <br>
             <textarea name="requests" id="requests" cols="30" rows="10" placeholder="Please input your text">
             </textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <input type="email">
+            <input type="url" name="url" id="url">
         </p>
         <button>Submit</button>
     </form>
